@@ -19,12 +19,32 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.2</version>
+                <version>3.7.0</version>
                 <configuration>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
+
+            <!-- waiting for a stable version
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jlink-plugin</artifactId>
+                <version>3.0.0-alpha-1</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <noHeaderFiles>true</noHeaderFiles>
+                    <noManPages>true</noManPages>
+                </configuration>
+            </plugin>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jmod-plugin</artifactId>
+            <version>3.0.0-alpha-1</version>
+            <extensions>true</extensions>
+            </plugin>
+            -->
+
         </plugins>
     </build>
 
@@ -32,5 +52,10 @@
         <module>sortedbits-crypto-api</module>
         <module>sortedbits-crypto-cli</module>
         <module>sortedbits-crypto-none</module>
+        <module>sortedbits-crypto-jasypt</module>
+        <!--
+        <module>sortedbits-crypto-jlink</module>
+        -->
+
     </modules>
 </project>
