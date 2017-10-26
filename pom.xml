@@ -25,27 +25,6 @@
                     <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <executable>java</executable>
-                    <arguments>
-                        <argument>--module-path</argument>
-                        <modulepath/>
-                        <argument>--module</argument>
-                        <argument>com.sortedbits.crypto.cli/com.sortedbits.crypto.cli.Main</argument>
-                    </arguments>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
