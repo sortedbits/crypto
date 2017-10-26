@@ -1,6 +1,10 @@
 package com.sortedbits.crypto.cli;
 
 import com.sortedbits.crypto.api.PasswordEncryption;
+import org.jline.reader.LineReader;
+import org.jline.reader.LineReaderBuilder;
+import org.jline.terminal.Terminal;
+import org.jline.terminal.TerminalBuilder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +28,14 @@ public class CryptoCommand {
         range(0, providers.size()).forEach(i -> out.println(format("%d - %s", i, providers.get(i).type().getName())));
 
 
-            String line = new BufferedReader(new InputStreamReader(System.in)).readLine();
+//        Terminal terminal = TerminalBuilder.builder().build();
+//        LineReader reader = LineReaderBuilder
+//                .builder()
+//                .terminal(terminal)
+//                .build();
+//        reader.readLine(">");
+
+        // System.console().readLine(">");
 
         //PasswordEncryption pbe = providers.get(0).get();
         //pbe.encrypt(null, "foo");
